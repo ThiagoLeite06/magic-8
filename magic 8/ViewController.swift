@@ -8,12 +8,18 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let answers = ["Ok", "Vai na fé", "WTF?!"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    
+    @IBAction func askButton(_ sender: UIButton) {
+       var choice =  answers.randomElement()
+       print(choice)
+    }
 }
 
